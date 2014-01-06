@@ -1,0 +1,740 @@
+/*** Global Style ***/
+
+body {
+  color: #312a2c;
+  font-family: "proxima-nova","Tahoma","Arial","Verdana",sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.4;
+  overflow-x: hidden;
+  position: relative;
+  text-align: center;
+  transition: left 0.25s ease;
+}
+
+h1 {
+  font-size: 50px;
+  font-weight: normal;
+  margin: 40px 0 0 0;
+}
+
+h2 {
+  font-size: 26px;
+  font-weight: normal;
+  margin-top: 0;
+}
+
+a {
+  color: #4d86c6;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #70a6e2;
+}
+
+ul.inline {
+  display: block;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+ul.inline li {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  vertical-align: top;
+}
+
+/*** Header ***/
+
+header {
+  background: url(../images/header-background-large.png) left top no-repeat;
+  background-size: 100% 91px;
+  display: block;
+  position: relative;
+}
+
+header nav {
+  background: url(../images/logo-large.png) center top no-repeat;
+  display: block;
+  height: 175px;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+header nav span {
+  height: 162px;
+  left: 50%;
+  margin-left: -80px;
+  position: absolute;
+  text-indent: -99999px;
+  top: 15px;
+  width: 160px;
+}
+
+header nav ul.inline {
+  padding: 50px 0 0 0;
+}
+
+header ul.inline li {
+  color: #fff;
+  cursor: pointer;
+  padding: 10px;
+  width: 16%;
+}
+
+header ul.inline li:nth-child(2) {
+  margin-right: 200px;
+}
+
+header ul.inline li:hover {
+  color: #fed634;
+}
+
+header.stuck {
+  background: url(../images/header-background-small.png) left top no-repeat;
+  background-size: 100% 68px;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
+
+header.stuck nav {
+  background: url(../images/logo-small.png) center top no-repeat;
+}
+
+header.stuck nav span {
+  cursor: pointer;
+  height: 55px;
+  margin-left: -32px;
+  top: 0;
+  width: 65px;
+  z-index: 1;
+}
+
+header.stuck nav ul.inline {
+  padding: 27px 0 0 0;
+}
+
+/*** Section: Intro ***/
+
+#intro {
+  padding: 0 10px 0 10px;
+}
+
+#intro p {
+  color: #666666;
+  font-size: 20px;
+}
+
+/*** Section: Hack Nights ***/
+
+#hacknights {
+  background: url(../images/hacknights/background.png) center bottom no-repeat;
+  background-size: 100% 359px;
+  height: 420px;
+  margin-top: 70px;
+}
+
+#hacknights h2 {
+  font-weight: bold;
+  margin-bottom: 0;
+  margin-top: 20px;
+}
+
+#hacknights ul.inline li {
+  min-height: 83px;
+  padding: 0 50px 100px 50px;
+  width: 220px;
+}
+
+#hacknights ul.inline li .icon-clock {
+  vertical-align: bottom;
+}
+
+/*** Section: Principles ***/
+
+#principles {
+  background: url(../images/principles/background.png) center top no-repeat;
+  background-size: 100% 406px;
+  height: 406px;
+  margin-top: -30px;
+}
+
+#principles h1 {
+  margin: 0;
+  padding: 50px 0 50px 0;
+}
+
+#principles h2 {
+  margin-bottom: 0;
+}
+
+#principles ul.inline li {
+  padding: 0 20px 0 20px;
+  vertical-align: top;
+  width: 199px;
+}
+
+#principles ul.inline li img {
+  height: 51px;
+}
+
+/*** Section: Organizers ***/
+
+#organizers {
+  padding: 0 10px 0 10px;
+}
+
+#organizers h1 {
+  margin-top: 50px;
+}
+
+#organizers h2 {
+  color: #666666;
+  margin-bottom: 50px;
+}
+
+#organizers ul.inline li {
+  padding: 0 10px 20px 10px;
+  width: 175px;
+}
+
+/*** Section: Projects ***/
+
+#projects {
+  background: url(../images/projects/background.png) center top no-repeat;
+  background-size: 100% 534px;
+  color: #ffffff;
+  display: block;
+  height: 534px;
+  margin-top: 50px;
+  padding: 0 10px 0 10px;
+  position: relative;
+  z-index: 0;
+}
+
+#projects h1 {
+  padding-top: 50px;
+}
+
+#projects p {
+  color: #bbd1e9;
+  margin-bottom: 50px;
+}
+
+#projects ul.inline li {
+  padding: 0 30px 0 30px;
+  width: 250px;
+}
+
+#projects ul.inline li p {
+  color: #ffffff;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+/*** Section: Location ***/
+
+#location {
+  background: url(../images/location/background.png) center top no-repeat;
+  background-size: 100% 737px;
+  display: block;  margin-top: -170px;
+  padding-top: 620px;
+  position: relative;
+  z-index: 100;
+}
+
+#location h1 {
+  color: #4d86c6;
+}
+
+#location p {
+  font-size: 24px;
+}
+
+/*** Section: Sponsors ***/
+
+#sponsors {
+  background: url(../images/sponsors/background.png) center top no-repeat;
+  background-size: 100% 600px;
+  min-height: 294px;
+}
+
+#sponsors h2 {
+  color: #666666;
+  font-size: 24px;
+  padding: 70px 0 10px 0;
+}
+
+#sponsors ul.inline li {
+  vertical-align: top;
+  width: 500px;
+}
+
+#sponsors ul.inline li a {
+  display: inline-block;
+  vertical-align: middle;
+  text-indent: -99999px;
+}
+
+#sponsors ul.inline li a.smartfactory {
+  background: url(../images/sponsors/smart-factory.png) center top no-repeat;
+  height: 121px;
+  max-width: 117px;
+  width: 36.4%;
+}
+
+#sponsors ul.inline li a.livefront {
+  background: url(../images/sponsors/livefront.png) center top no-repeat;
+  height: 37px;
+  max-width: 198px;
+  width: 61.6%;
+}
+
+#sponsors ul.inline li a.twitter {
+  background: url(../images/sponsors/twitter.png) center top no-repeat;
+  height: 44px;
+  width: 93px;
+}
+
+#sponsors ul.inline li a:hover {
+  background-position: center -125px;
+}
+
+#sponsors ul.inline li:last-child a {
+  margin-top: 30px;
+}
+
+
+/*** Section: Mailing List ***/
+
+#mailing-list {
+  background-color: #4d86c6;
+  display: block;
+  margin-top: 20px;
+  padding: 50px 20px;
+  position: relative;
+}
+
+#mailing-list div.group {
+  background: transparent url(../images/mailinglist/background.png) left top no-repeat;
+  display: inline-block;
+  height: 117px;
+  max-width: 375px;
+  padding: 16px;
+  position: relative;
+  width: 407px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; 
+}
+
+#mailing-list div.group img {
+  display: none;
+  position: absolute;
+  right: -37px;
+  top: 49px;
+}
+
+#mailing-list ul {
+  display: table;
+  list-style-type: none;
+  margin: 0 auto 10px;
+  max-width: 585px;
+  padding: 0;
+  text-align: left;
+  width: 100%;
+}
+
+#mailing-list ul li {
+  display: table-cell;
+  text-align: center;
+}
+
+#mailing-list ul li:first-child {
+  text-align: left;
+}
+
+#mailing-list ul li:last-child {
+  text-align: right;
+}
+
+#mailing-list label {
+  color: #fff;
+  display: block;
+  font-size: 22px;
+  padding-bottom: 10px;
+}
+
+#mailing-list ul label {
+  display: inline-block;
+  font-size: 16px;
+  padding-bottom: 0;
+}
+
+#mailing-list input {
+  border: none;
+  border-radius: 0;
+  padding: 8px 10px 8px 10px;
+  margin: 0 0 16px;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; 
+}
+
+#mailing-list input[type="checkbox"] {
+  margin: 0 5px 0 0;
+  padding: 0;
+  width: auto;
+}
+
+#mailing-list button {
+  background-color: #ffd80f;
+  border: none;
+  float: right;
+  font-size: 14px;
+  margin: 0;
+  padding: 8px 12px 8px 12px;
+  text-transform: uppercase;
+}
+
+#mailing-list #mce-responses .response {
+  color: #fff;
+  margin: 0 auto 10px;
+}
+
+#mailing-list a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+@media screen and (max-width:1175px) {
+  #principals h2 {
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  #principals ul.inline li {
+    width: 199px;
+  }
+}
+
+@media screen and (max-width:1050px) {
+  #sponsors ul.inline li {
+    width: 46%;
+  }
+}
+
+@media screen and (max-width:985px) {
+  #hacknights ul.inline li {
+    width: 170px;
+  }
+
+  #hacknights ul.inline li img {
+    height: auto;
+    max-width: 100%;
+  }
+
+  #principles h2 {
+    font-size: 18px;
+  }
+
+  #principles ul.inline li {
+    font-size: 14px;
+    padding: 0 10px 0 10px;
+    width: 150px;
+  }
+  
+  #projects ul.inline li {
+    padding: 0 10px 0 10px;
+    width: 245px;
+  }
+}
+
+@media screen and (max-width:840px) {
+  header ul.inline li {
+    font-size: 14px;
+  }
+  
+  header ul.inline li:nth-child(2) {
+    margin-right: 150px;
+  }
+  
+  #hacknights {
+    height: 359px;
+  }
+
+  #hacknights ul.inline li {
+    padding: 0 20px 100px 20px;
+    width: 146px;
+  }
+
+  #hacknights h2 {
+    font-size: 18px;
+  }
+  
+  #projects ul.inline li {
+    width: 195px;
+  }
+
+  #projects ul.inline li p {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width:740px) {
+  header ul.inline li {
+    font-size: 12px;
+    padding: 12px 5px 12px 5px;
+  }
+
+  #principles h2 {
+    font-size: 16px;
+  }
+
+  #principles ul.inline li {
+    width: 118px;
+  }
+}
+
+@media screen and (max-width:690px) {
+  #projects ul.inline li {
+    width: 159px;
+  }
+
+  #projects ul.inline li p {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width:640px) {
+  body {
+    font-size: 14px;
+  }
+  
+  h1 {
+    font-size: 32px;
+  }
+  
+  h2 {
+    font-size: 20px;
+  }
+  
+  header ul.inline li {
+    font-size: 10px;
+    padding: 12px 5px 12px 5px;
+  }
+  
+  #intro p {
+    font-size: 16px;
+  }
+
+  #mailing-list {
+    padding-top: 30px;
+  }
+}
+
+@media screen and (max-width:580px) {
+  header nav ul.inline {
+    display: none;
+  }
+
+  header.stuck nav ul.inline {
+    padding: 0 !important;
+  }
+
+  header nav ul.inline li {
+    display: block;
+    font-size: 16px;
+    padding: 10px 20px;
+    text-align: left;
+    width: 140px;
+  }
+
+  #hacknights ul.inline li {
+    display: block;
+    padding: 0;
+    width: 100%;
+  }
+
+  #hacknights ul.inline li img:first-child {
+    float: left;
+    height: 85px;
+    margin-left: 50px;
+    width: auto;
+  }
+
+  #principles h1 {
+    padding-bottom: 20px;
+  }
+  
+  #principles h2 {
+    font-size: 14px;
+  }
+  
+  #principles ul.inline li {
+    padding-bottom: 15px;
+    width: 40%;
+  }
+
+  #principles ul.inline li img {
+    height: 35px;
+    width: auto;
+  }
+
+  #principles ul.inline li p {
+    margin-top: 5px;
+  }
+  
+  #organizers h1 {
+    font-size: 34px;
+  }
+
+  #organizers ul.inline li {
+    width: 100px;
+  }
+
+  #organizers ul.inline li img {
+    height: auto;
+    width: 75px;
+  }
+  
+  #projects h1 {
+    padding-top: 35px;
+  }
+
+  #projects p {
+    font-size: 20px;
+    margin: 3px 0 10px 0;
+  }
+  
+  #projects ul.inline li {
+    width: 20%;
+  }
+
+  #projects ul.inline li:nth-child(2) {
+    width: 35%;
+  }
+  
+  #location p {
+    font-size: 20px;
+  }
+
+  #sponsors ul.inline li a {
+    clear: left;
+    display: inline-block;
+    margin: 0 0 20px;
+    width: 100% !important;
+  }
+}
+
+@media screen and (max-width:480px) {
+  #sponsors h2 {
+    padding-top: 20px;
+  }
+
+  #sponsors li:first-child h2 {
+    padding-top: 70px;
+  }
+
+  #sponsors ul.inline li {
+    clear: left;
+    width: 100%;
+  }
+
+  #sponsors ul.inline li:last-child a {
+    margin-top: 0;
+  }
+
+  #mailing-list div.group {
+    width: 100%;
+  }
+
+  #mailing-list ul label {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width:375px) {
+  #mailing-list ul label span {
+    display: none;
+  }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (min--moz-device-pixel-ratio: 2),
+only screen and (-o-min-device-pixel-ratio: 2/1),
+only screen and (min-device-pixel-ratio: 2) {
+
+  header {
+    background-image: url(../images/header-background-large@2x.png);
+    background-size: 100% 91px;
+  }
+
+  header nav {
+    background-image: url(../images/logo-large@2x.png);
+    background-size: 374px 175px;
+  }
+
+  header.stuck {
+    background-image: url(../images/header-background-small@2x.png);
+    background-size: 100% 68px;
+  }
+
+  header.stuck nav {
+    background-image: url(../images/logo-small@2x.png);
+    background-size: 65px 55px;
+  }
+
+  #hacknights {
+    background-image: url(../images/hacknights/background@2x.png);
+    background-size: 100% 359px;
+  }
+
+  #principals {
+    background-image: url(../images/principles/background@2x.png);
+    background-size: 100% 376px;
+  }
+
+  #projects {
+    background-image: url(../images/projects/background@2x.png);
+    background-size: 100% 534px;
+  }
+
+  #location {
+    background-image: url(../images/location/background@2x.png);
+    background-size: 100% 737px;
+  }
+
+  #sponsors {
+    background-image: url(../images/sponsors/background@2x.png);
+    background-size: 100% 600px;
+  }
+
+  #sponsors ul.inline li a.smartfactory {
+    background-image: url(../images/sponsors/smart-factory@2x.png);
+    background-size: 87px 250px;
+  }
+
+  #sponsors ul.inline li a.livefront {
+    background-image: url(../images/sponsors/livefront@2x.png);
+    background-size: 168px 250px;
+  }
+
+  #sponsors ul.inline li a.twitter {
+    background-image: url(../images/sponsors/twitter@2x.png);
+    background-size: 63px 250px;
+  }
+
+  #mailing-list div.group {
+    background-image: url(../images/mailinglist/background@2x.png);
+    background-size: 407px 117px;
+  }
+}
