@@ -262,7 +262,7 @@ header.stuck nav ul.inline {
 
 #sponsors {
   background: url(../images/sponsors/background.png) center top no-repeat;
-  background-size: 100% 600px;
+  background-size: 100% 700px;
   min-height: 294px;
 }
 
@@ -279,6 +279,7 @@ header.stuck nav ul.inline {
 
 #sponsors ul.inline li a {
   display: inline-block;
+  margin-bottom: 20px;
   vertical-align: middle;
   text-indent: -99999px;
 }
@@ -287,14 +288,21 @@ header.stuck nav ul.inline {
   background: url(../images/sponsors/smart-factory.png) center top no-repeat;
   height: 121px;
   max-width: 117px;
-  width: 36.4%;
+  width: 27.1%;
 }
 
 #sponsors ul.inline li a.livefront {
   background: url(../images/sponsors/livefront.png) center top no-repeat;
   height: 37px;
   max-width: 198px;
-  width: 61.6%;
+  width: 45.8%;
+}
+
+#sponsors ul.inline li a.astrohq {
+  background: url(../images/sponsors/astrohq.png) center top no-repeat;
+  height: 121px;
+  max-width: 117px;
+  width: 27.1%;
 }
 
 #sponsors ul.inline li a.twitter {
@@ -487,6 +495,11 @@ header.stuck nav ul.inline {
   #projects ul.inline li p {
     font-size: 16px;
   }
+
+  #sponsors ul.inline li a {
+    margin-bottom: 20px;
+    width: 100% !important;
+  }  
 }
 
 @media screen and (max-width:740px) {
@@ -726,6 +739,11 @@ only screen and (min-device-pixel-ratio: 2) {
   #sponsors ul.inline li a.livefront {
     background-image: url(../images/sponsors/livefront@2x.png);
     background-size: 168px 250px;
+  }
+
+  #sponsors ul.inline li a.astrohq {
+    background-image: url(../images/sponsors/astrohq@2x.png);
+    background-size: 88px 250px;
   }
 
   #sponsors ul.inline li a.twitter {
