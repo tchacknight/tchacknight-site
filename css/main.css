@@ -67,7 +67,8 @@ header nav {
   position: relative;
 }
 
-header nav span {
+header nav span,
+header nav a.home {
   height: 162px;
   left: 50%;
   margin-left: -80px;
@@ -75,6 +76,11 @@ header nav span {
   text-indent: -99999px;
   top: 15px;
   width: 160px;
+}
+
+header nav a.home {
+  cursor: pointer;
+  z-index: 1;
 }
 
 header nav ul.inline {
@@ -88,11 +94,27 @@ header ul.inline li {
   width: 16%;
 }
 
+header .home + ul.inline li {
+  cursor: default;
+  padding: 0;
+}
+
 header ul.inline li:nth-child(2) {
   margin-right: 200px;
 }
 
 header ul.inline li:hover {
+  color: #fed634;
+}
+
+header ul.inline li a {
+  color: #fff;
+  float: left;
+  padding: 10px 0;
+  width: 100%;
+}
+
+header ul.inline li a:hover {
   color: #fed634;
 }
 
@@ -244,10 +266,18 @@ header.stuck nav ul.inline {
 #location {
   background: url(../images/location/background.png) center top no-repeat;
   background-size: 100% 737px;
-  display: block;  margin-top: -170px;
+  display: block;  
+  margin-top: -170px;
   padding-top: 620px;
   position: relative;
   z-index: 100;
+}
+
+#location.map {
+  background: url(../images/location/background-map.png) center top no-repeat;
+  background-size: 100% 675px;
+  margin-top: -10px;
+  padding-top: 620px;
 }
 
 #location h1 {
@@ -256,6 +286,19 @@ header.stuck nav ul.inline {
 
 #location p {
   font-size: 24px;
+}
+
+#location p.parking {
+  font-size: 22px;
+  margin: 35px auto 40px;
+  max-width: 90%;
+  width: 700px;
+}
+
+#location img.lot {
+  height: auto;
+  margin: 0 0 30px;
+  max-width: 90%;
 }
 
 /*** Section: Sponsors ***/
@@ -673,6 +716,11 @@ header.stuck nav ul.inline {
   #mailing-list ul label {
     font-size: 14px;
   }
+
+  #location.map {
+    background: none !important;
+    padding-top: 0;
+  }
 }
 
 @media screen and (max-width:375px) {
@@ -724,6 +772,11 @@ only screen and (min-device-pixel-ratio: 2) {
   #location {
     background-image: url(../images/location/background@2x.png);
     background-size: 100% 737px;
+  }
+
+  #location.map {
+    background-image: url(../images/location/background-map@2x.png);
+    background-size: 100% 675px;
   }
 
   #sponsors {
