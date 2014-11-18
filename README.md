@@ -9,4 +9,4 @@
 * Google Chrome
 * Safari 6+
 
-The site is reponsive and should behave as such in all supported browsers.
+The site is responsive and should behave as such in all supported browsers.

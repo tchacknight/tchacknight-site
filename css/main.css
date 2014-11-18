@@ -172,7 +172,7 @@ header.stuck nav ul.inline {
 #hacknights ul.inline li {
   min-height: 83px;
   padding: 0 50px 100px 50px;
-  width: 220px;
+  width: 300px;
 }
 
 #hacknights ul.inline li .icon-clock {
@@ -404,16 +404,8 @@ header.stuck nav ul.inline {
 }
 
 #mailing-list ul li {
-  display: table-cell;
-  text-align: center;
-}
-
-#mailing-list ul li:first-child {
-  text-align: left;
-}
-
-#mailing-list ul li:last-child {
-  text-align: right;
+  display: inline-block;
+  margin-right: 20px;
 }
 
 #mailing-list label {
@@ -524,7 +516,7 @@ header.stuck nav ul.inline {
 
   #hacknights ul.inline li {
     padding: 0 20px 100px 20px;
-    width: 146px;
+    width: 200px;
   }
 
   #hacknights h2 {
